@@ -10,8 +10,7 @@ COPY . .
 
 RUN npm run build
 
-EXPOSE 5173
-
-ENV PORT=5173
+# Cloud Run will inject PORT=8080
+EXPOSE 8080
 
 CMD ["node", "server.js"]
