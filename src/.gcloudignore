@@ -1,0 +1,10 @@
+# .gcloudignore
+node_modules/
+.git/
+.gitignore
+src/
+tsconfig.*
+vite.config.ts
+eslint.config.js
+tailwind.config.js
+# You might want to add other files like index.html or package*.json if they are not needed in the final deployed service

@@ -1,0 +1,14 @@
+.git/
+.gitignore
+.gcloudignore
+.bolt/
+.vscode/
+.idea/
+node_modules/
+supabase/
+*.log
+*.md
+.env
+.env.local
+.DS_Store
+vite-env.d.ts
