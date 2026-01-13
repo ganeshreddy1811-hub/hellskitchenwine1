@@ -6,6 +6,10 @@ steps:
       - 'gcr.io/$PROJECT_ID/hellskitchenwine:$SHORT_SHA'
       - '-t'
       - 'gcr.io/$PROJECT_ID/hellskitchenwine:latest'
+      - '--build-arg'
+      - 'VITE_SUPABASE_URL=${_VITE_SUPABASE_URL}'
+      - '--build-arg'
+      - 'VITE_SUPABASE_ANON_KEY=${_VITE_SUPABASE_ANON_KEY}'
       - '.'
 
   - name: 'gcr.io/cloud-builders/docker'
