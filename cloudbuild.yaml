@@ -17,9 +17,8 @@ steps:
       - 'push'
       - 'gcr.io/$PROJECT_ID/hellskitchenwine:$SHORT_SHA'
 
-  - name: 'gcr.io/cloud-builders/gcloud'
+  - name: 'gcr.io/cloud-builders/run'
     args:
-      - 'run'
       - 'deploy'
       - 'hellskitchenwine'
       - '--image=gcr.io/$PROJECT_ID/hellskitchenwine:$SHORT_SHA'
